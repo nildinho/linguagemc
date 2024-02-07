@@ -6,12 +6,12 @@ int main() {
 
     printf("Números iguais nos dois arrays:\n");
 
-    int a, b;
+    int i, j;
 
-    for (a = 0; a < 10; a++) {
-        for (b = 0; b < 15; b++) {
-            if (c1[a] == c2[b]) {
-                printf("%d\n", c1[a]);
+    for (i = 0; i < 10; i++) {
+        for (j = 0; j < 15; j++) {
+            if (c1[i] == c2[j]) {
+                printf("%d\n", c1[j]);
             }
         }
     }
