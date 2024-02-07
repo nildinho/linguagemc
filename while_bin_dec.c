@@ -23,4 +23,4 @@ int main() {
     printf("O numero binario %d em decimal é: %d\n", numeroBinario, binarioParaDecimal(numeroBinario));
 
     return 0;
-}
+}  
