@@ -15,6 +15,7 @@ int main(){
     return 0;
 }
 ```
+#### primeiro.c
 
 ```c
 /*
@@ -36,6 +37,7 @@ int main(){
     return 0;                    
 }
 ```
+#### operacoes.c
 
 ```c
 #include<stdio.h>
@@ -67,6 +69,7 @@ int main(){
     return 0;
 }
 ```
+#### Descontos.c
 
 ```c
 #include <stdio.h>
