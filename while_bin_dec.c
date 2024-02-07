@@ -1,26 +1,17 @@
 #include <stdio.h>
 
-int binarioParaDecimal(int numeroBinario) {
-    int decimal = 0, expoente = 0, digito;
-
-    while (numeroBinario != 0) {
-      
-        digito = numeroBinario % 10;
-        
-
-        decimal += digito * (1 << expoente);
-    
-        numeroBinario /= 10;
-        expoente++;
-    }
-
-    return decimal;
+int main(){
+    int binario[6]={1,0,1,1,1,0};
+    int rs = 0;
+    int pos = 0;
+    int exp = 5;
+     
+     while ( pos <= 5){
+        rs += binario[pos] * (pow(2 , exp));
+        pos++;
+        exp--;
+     }
+     printf("%d\n",rs);
+     return 0;    
 }
-
-int main() {
-    int numeroBinario = 101110;
-
-    printf("O numero binario %d em decimal é: %d\n", numeroBinario, binarioParaDecimal(numeroBinario));
-
-    return 0;
-}  
+ 
