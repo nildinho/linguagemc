@@ -219,8 +219,9 @@ int main(){
   }
   return 0;
 }
+
 ```
-#### white_dec_bin.c
+#### while_dec_bin.c
 
 ```c
 #include <stdio.h>
@@ -240,8 +241,9 @@ int main(){
     printf("%d\n",rs);
     return 0;
 }
+
 ```
-#### While_bissexto.c
+#### while_bissexto.c
 
 ```c
 #include <stdio.h>
@@ -261,8 +263,6 @@ int main(){
     return 0;
 }
 ```
-
-
 
 
 
