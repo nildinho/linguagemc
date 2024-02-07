@@ -394,8 +394,75 @@ int main(){
     return 0;
 }
 ```
+#### principal.c
 
+```c
+#include<stdio.h>
+#include "primeiro.h"
 
+int main(){
+    int rs = quadrado(5,7);
+
+    printf("A aréa do quadrado de 5 e 7 é %d\n",rs);
+
+    return 0;
+}
+```
+
+#### primeiro.h
+
+```c
+#include<stdio.h>
+
+int quadrado(int x, int y){
+    return x * y;
+}
+```
+
+#### pass_por_valor.c
+
+```c
+#include<stdio.h>
+ 
+int subtrair (int *x, int *y){
+    printf("posiçao x %p e posiçao y %p\n", x,y);
+ 
+    return *x - *y;
+}
+   
+    int main(){
+ 
+        int v1 = 10;
+        int v2 = 5;
+        printf("posiçao de v1 %p e posiçao de v2 %p\n", &v1,&v2);
+        int rs = subtrair(&v1 ,&v2);
+        printf("o resultado é %d\n", rs);
+        return 0;
+    }
+ 
+```
+#### pass_por_ref.c
+
+```c
+#include<stdio.h>
+
+int subtrair(int *x, int *y){
+    printf("Posição x %p\n e Posição y %p\n",x,y);
+    return *x - *y;
+}
+
+int main(){
+
+    int v1 = 10;
+    int v2 = 5;
+    printf("Posição de v1 %p\n e Posição de v2 %p\n",&v1,&v2);
+    int rs = subtrair(&v1,&v2);
+    printf("O resultado é %d\n",rs);
+
+    return 0;
+
+}
+```
 
 
 
