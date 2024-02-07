@@ -217,9 +217,8 @@ int main(){
       printf("%d\n",i);
       i++;
   }
-  return 0;
+  return 0
 }
-
 ```
 #### while_dec_bin.c
 
@@ -241,7 +240,6 @@ int main(){
     printf("%d\n",rs);
     return 0;
 }
-
 ```
 #### while_bissexto.c
 
